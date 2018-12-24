@@ -124,3 +124,52 @@ friends = ['Harry', 'Hermione', 'Ron']
 separator = ' * '
 joined = separator.join(friends)
 print(joined)
+
+print()
+
+marxes = ['Groucho', 'Chico', 'Harpo']
+sorted_marxes = sorted(marxes)
+print(sorted_marxes)
+print(marxes)
+
+marxes.sort()
+print(marxes)
+
+numbers = [2, 1, 4.0, 3]
+numbers.sort()
+print(numbers)
+
+numbers = [2, 1, 4.0, 3]
+numbers.sort(reverse=True)
+print(numbers)
+
+marxes = ['Groucho', 'Chico', 'Harpo']
+print(len(marxes))
+
+print()
+
+a = [1, 2, 3]
+print(a)
+b = a
+print(b)
+a[0] = 'surprise'
+print(a)
+print(b)
+b[0] = 'I hate surpreises'
+print(b)
+print(a)
+
+a = [1, 2, 3]
+print(a)
+b = a.copy()
+print(b)
+c = list(a)
+print(c)
+d = a[:]
+print(d)
+
+a[0] = 'interger lists are boring'
+print(a)
+print(b)
+print(c)
+print(d)
