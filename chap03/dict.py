@@ -98,3 +98,18 @@ print(signals.keys())
 
 print(list( signals.values() ))
 
+print(list( signals.items() ))
+
+signals = {'Green': 'go', 'yellow': 'go faster',
+    'red': 'smile for the camera'}
+save_signals = signals
+print(save_signals)
+signals['blue'] = 'confuse everyone'
+print(save_signals)
+
+signals = {'Green': 'go', 'yellow': 'go faster',
+    'red': 'smile for the camera'}
+original_signals = signals.copy()
+signals['blue'] = 'confuse everyone'
+print(signals)
+print(original_signals)
