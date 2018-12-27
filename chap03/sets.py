@@ -44,4 +44,71 @@ b = {2, 3}
 
 print (a & b)
 print(a.intersection(b))
+print(bruss & wruss)
 
+print(a | b)
+print(a.union(b))
+print(bruss | wruss)
+
+print(a - b)
+print(a.difference(b))
+
+print(bruss - wruss)
+print(wruss - bruss)
+
+print(a ^ b)
+print(a.symmetric_difference(b))
+
+print(bruss ^ wruss)
+
+print(a <= b)
+print(a.issubset(b))
+
+print(bruss <= wruss)
+
+print(a <= a)
+print(a.issubset(a))
+
+print(a < b)
+print(a < a)
+
+print(bruss < wruss)
+
+print(a >= b)
+print(a.issuperset(b))
+
+print(wruss >= bruss)
+
+print(a >= a)
+print(a.issuperset(a))
+
+print(a > b)
+
+print(wruss > bruss)
+
+print(a > a)
+
+print()
+
+marx_list = ['Groucho', 'Chico', 'Harpo']
+marx_tuple = 'Groucho', 'Chico', 'Harpo'
+marx_dict = {'Groucho': 'banjo', 'Chico': 'piano', 'Harpo': 'harp'}
+print(marx_list[2])
+print(marx_dict['Harpo'])
+
+marxes = ['Groucho', 'Chico', 'Harpo']
+pythons = ['Chapman', 'Cleese', 'Gilliam', 'Jones', 'Palin']
+stooges = ['Meo', 'Curly', 'Larry']
+tuple_of_lists = marxes, pythons, stooges
+print(tuple_of_lists)
+list_of_lists = [marxes, pythons, stooges]
+print(list_of_lists)
+
+dict_of_lists = {'Marxes': marxes, 'Pythons': pythons, 'Stooges': stooges}
+print(dict_of_lists)
+
+houses = {
+    (44.79, -93,14, 285): 'My House',
+    (38.89, -77.03, 13): 'The White House'
+    }
+print(houses)
