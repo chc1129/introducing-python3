@@ -1,9 +1,8 @@
-animal = 'fruitbat'
-def change_and_print_global():
-    global animal
-    animal = 'wombat'
-    print('insde change_and_print_global:', animal)
+def amazing():
+    '''これはすばらしい関数だ。
+    もう一度見る?'''
+    print('この関数の名前:', amazing.__name__)
+    print('docstring:', amazing.__doc__)
 
-print(animal)
-change_and_print_global()
-print(animal)
+amazing()
+
