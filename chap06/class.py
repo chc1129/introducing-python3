@@ -3,4 +3,4 @@ class Person():
         self.name = name
 
 hunter = Person('Elmer Fudd')
-print(hunter)
+print('The mighty hunter: ', hunter.name)
