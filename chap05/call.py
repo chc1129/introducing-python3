@@ -1,2 +1,2 @@
-from zoo import hours
-hours()
+from zoo import hours as info
+info()
