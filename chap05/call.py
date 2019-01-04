@@ -1,2 +1,2 @@
-import zoo as menagerie
-menagerie.hours()
+from zoo import hours
+hours()
