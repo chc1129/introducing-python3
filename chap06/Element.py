@@ -3,6 +3,8 @@ class Element:
         self.name = name
         self.symbol = symbol
         self.number = number
+    def dump(self):
+        print('name=%s, symbol=%s, number=%s' % (self.name, self.symbol, self.number))
 
 hydrogen = Element('Hydrogen', 'H', 1)
 print(hydrogen)
@@ -18,3 +20,6 @@ print(hydrogen.number)
 
 hydrogen = Element(**el_dict)
 print(hydrogen.name)
+
+hydrogen = Element(**el_dict)
+hydrogen.dump()
