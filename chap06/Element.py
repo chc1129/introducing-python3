@@ -4,7 +4,7 @@ class Element:
         self.symbol = symbol
         self.number = number
     def __str__(self):
-        print('name=%s, symbol=%s, number=%s' % (self.name, self.symbol, self.number))
+        return('name=%s, symbol=%s, number=%s' % (self.name, self.symbol, self.number))
 
 hydrogen = Element('Hydrogen', 'H', 1)
 print(hydrogen)
@@ -19,7 +19,4 @@ print(hydrogen.symbol)
 print(hydrogen.number)
 
 hydrogen = Element(**el_dict)
-print(hydrogen.name)
-
-hydrogen = Element(**el_dict)
-hydrogen.dump()
+print(hydrogen)
