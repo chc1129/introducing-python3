@@ -5,4 +5,11 @@ def unicode_test(value):
     print('value="%s", name="%s", value2="%s"' % (value, name, value2))
 
 unicode_test('A')
+unicode_test('$')
+unicode_test('\u00a2')
+unicode_test('\u20ac')
+unicode_test('\u2063')
 
+import unicodedata
+print(unicodedata.name('\u00e9'))
+print(unicodedata.lookup('E WITH ACUTE, LATIN SMALL LETTER'))
