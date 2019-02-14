@@ -2,17 +2,17 @@ poem = ''
 fin = open('relativity', 'rt')
 #poem = fin.read()
 #chunk = 100
-while True:
+#while True:
 #    fragment = fin.read(chunk)
-    line = fin.readline()
+#    line = fin.readline()
 #    if not fragment:
-    if not line:
-        break
+#    if not line:
+#        break
 #    poem += fragment
-    poem += line
+#    poem += line
 
 for line in fin:
-        poem = linsj
+        poem += line
 
 fin.close()
 print(len(poem))
