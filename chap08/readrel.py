@@ -1,5 +1,7 @@
 poem = ''
 fin = open('relativity', 'rt')
+lines = fin.readlines()
+fin.close()
 #poem = fin.read()
 #chunk = 100
 #while True:
@@ -10,9 +12,11 @@ fin = open('relativity', 'rt')
 #        break
 #    poem += fragment
 #    poem += line
+print(len(lines), 'lines read')
+#for line in fin:
+#        poem += line
+for line in lines:
+    print(line, end='')
 
-for line in fin:
-        poem += line
-
-fin.close()
-print(len(poem))
+#fin.close()
+#print(len(poem))
