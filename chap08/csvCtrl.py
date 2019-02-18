@@ -1,11 +1,12 @@
 import csv
 villains = [
-    ['Doctor', 'No'],
-    ['Rosa', 'Klebb'],
-    ['Mister', 'Big'],
-    ['Autric', 'Goldfinger'],
-    ['Ernst', 'Blofeld'],
+    {'first': 'Doctor', 'last': 'No'},
+    {'first': 'Rosa', 'last': 'Klebb'},
+    {'first': 'Mister', 'last': 'Big'},
+    {'first': 'Auric', 'last': 'Goldfinger'},
+    {'first': 'Ernst', 'last': 'Blofeld'},
     ]
 with open('villains', 'wt') as fout:
-    csvout = csv.writer(fout)
-    csvout.writerows(villains)
+    cout = csv.DictWriter(fout, ['first', 'last'])
+    cout.writeheader()
+    cout.writerows(villains)
