@@ -1,3 +1,4 @@
 def just_do_it(text):
     "Capitalize all words in <text>"
-    return text.title()
+    from string import capwords
+    return capwords(text)
